@@ -11,5 +11,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-restricted-syntax": ["error", "FunctionExpression", "WithStatement"],
+        "no-console": 0
     }
 }
