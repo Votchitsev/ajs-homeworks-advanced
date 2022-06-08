@@ -1,0 +1,17 @@
+image: Ubuntu2004
+
+stack: Node 16
+
+branches:
+  only:
+  - master
+
+build: off
+
+install: npm install
+
+build_script: 
+  - npm run build
+
+test_script: 
+  - npm test && npm run lint
